@@ -80,7 +80,7 @@
 
 
 ////////////////////////////////////////////////////////////////////////////////////
-
+// Another Code
 
 var colors = [ "green", "red","yellow", "blue"]
 var randomChosenArray = [];
@@ -104,7 +104,6 @@ $(".btn").on("click", function () {
     var clickedColor = $(this).attr("id");
     clickedColorArray.push(clickedColor);
     sounds(clickedColor);
-    // press(clickedColor);
         $(this).addClass("pressed");
         setTimeout(() => {
             $(this).removeClass("pressed");
@@ -157,10 +156,3 @@ function sounds(name) {
     var audio = new Audio("./sounds/" + name + ".mp3")
     audio.play()
 }
-
-// function press(currentPress) {
-//     $("#" + currentPress).addClass("pressed");
-//     setTimeout(() => {
-//         $("#" + currentPress).removeClass("pressed");
-//     }, 100);
-// }
